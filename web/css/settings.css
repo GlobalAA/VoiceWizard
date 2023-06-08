@@ -1,0 +1,118 @@
+.header {
+  background-color: #121418;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
+.header img {
+  cursor: pointer;
+}
+
+.options {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.options .config {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: column;
+}
+.options .config input:not(.no-default) {
+  background-color: #121418;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 5px;
+  margin: 15px auto;
+  color: white;
+  width: 180px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+.options .config input:not(.no-default)::-moz-placeholder {
+  color: white;
+}
+.options .config input:not(.no-default)::placeholder {
+  color: white;
+}
+.options .config .change-input {
+  width: 20px !important;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.options .config .change-input::-webkit-inner-spin-button {
+  display: none;
+}
+.options .config .open_button {
+  background-color: #121418;
+  border: 0;
+  border-radius: 5px;
+  margin: 15px auto;
+  color: white;
+  width: 50px;
+  height: 35px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.options .config .open_button:hover {
+  background-color: black;
+}
+.options .config div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#save {
+  background-color: #121418;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 35px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background-color 0.3s ease-in-out;
+}
+#save:hover {
+  background-color: black;
+}
+
+footer {
+  background-color: #121418;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  max-height: 54px;
+}
+footer img {
+  cursor: pointer;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1 1 auto;
+}

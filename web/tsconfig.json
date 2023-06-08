@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"target": "es6", // Specify the ECMAScript version for output
+		"module": "ES2015", // Specify module code generation
+		"rootDir": "./ts",
+		"outDir": "./js", // Specify output directory for compiled files
+		"strict": true, // Enable all strict type-checking options
+		"esModuleInterop": true // Enable compatibility with CommonJS modules
+	},
+	"include": ["ts/**/*.ts"] // Specify the files to be included in compilation
+	// "exclude": ["node_modules"] // Specify the files to be excluded from compilation
+}

@@ -1,0 +1,55 @@
+.select {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	gap: 15px;
+
+	input {
+		padding: 10px;
+		border: 0;
+		background-color: $dark_color;
+		border-radius: 5px;
+		cursor: pointer;
+		outline: none;
+		width: 37px;
+		text-align: center;
+		font-weight: 500;
+		font-size: 15px;
+		user-select: none;
+	}
+
+	.option {
+		position: absolute;
+		top: 40px;
+		background-color: $dark_color;
+		padding: 0;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		width: 37px;
+		padding: 10px;
+		border-radius: 5px;
+		font-weight: 500;
+
+		div {
+			padding: 10px;
+			cursor: pointer;
+			width: 100%;
+			text-align: center;
+			transition: background-color 0.3s ease-in-out;
+			user-select: none;
+
+			&:hover {
+				background-color: darken($dark_color, 15%);
+			}
+		}
+	}
+
+	.active {
+		&.option {
+			display: flex;
+		}
+	}
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VoiceWizard (Settings)</title>
+		<script type="text/javascript" src="/eel.js"></script>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/settings.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<img
+					src="./assets/icons/arrow.svg"
+					onclick="window.location = './index.html'"
+				/>
+			</header>
+			<main>
+				<div class="options">
+					<div class="config">
+						<div id="defaultLanguage">
+							<input type="text" placeholder="Default language: " readonly />
+							<input
+								type="text"
+								class="change-input"
+								id="language"
+								maxlength="2"
+							/>
+						</div>
+						<div id="outputPath">
+							<input
+								type="text"
+								placeholder="Output path: this dir"
+								readonly
+								id="dir-input"
+							/>
+							<button class="open_button" id="open-button">Open</button>
+						</div>
+						<div id="listen">
+							<input type="text" placeholder="Listen: False" readonly />
+							<input type="text" boolean class="change-input" maxlength="1" />
+						</div>
+						<div id="autoListen">
+							<input type="text" placeholder="Auto listen: False" readonly />
+							<input type="text" boolean class="change-input" maxlength="1" />
+						</div>
+						<div id="listenTimeout">
+							<input type="text" placeholder="Listen timeout: 1" readonly />
+							<input
+								type="number"
+								class="change-input"
+								id="timeout"
+								max="5"
+								min="1"
+							/>
+						</div>
+						<button id="save">Save</button>
+					</div>
+				</div>
+			</main>
+			<footer class="footer">
+				<img
+					src="./assets/icons/instagram.svg"
+					onclick="eel.open_url('https\:/\/www.instagram.com/globala_a/')"
+				/>
+				<img
+					src="./assets/icons/github.svg"
+					onclick="eel.open_url('https\:/\/github.com/globalaa')"
+				/>
+				<img
+					src="./assets/icons/telegram.svg"
+					onclick="eel.open_url('https\:/\/t.me/GlobalA_A')"
+				/>
+			</footer>
+		</div>
+		<script type="module" src="./js/defaultActions.js"></script>
+		<script type="module" src="./js/settings.js"></script>
+	</body>
+</html>

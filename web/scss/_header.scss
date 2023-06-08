@@ -1,0 +1,19 @@
+@import '_vars';
+
+.header {
+	background-color: $dark_color;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 20px;
+
+	span {
+		user-select: none;
+	}
+
+	.buttons {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+}

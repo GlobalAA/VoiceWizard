@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VoiceWizard</title>
+		<script type="text/javascript" src="/eel.js"></script>
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<span>VoiceWizard</span>
+				<div class="buttons">
+					<a class="with-icon" onclick="window.location = './settings.html'">
+						<img src="./assets/icons/settings.svg" />
+						<span class="hover">Настройки</span>
+					</a>
+				</div>
+			</header>
+			<main>
+				<div class="data">
+					<div class="enter">
+						<input
+							type="text"
+							maxlength="200"
+							placeholder="Enter your text"
+							id="entered_text"
+						/>
+						<div class="select">
+							<input
+								type="text"
+								readonly
+								id="language"
+								title="Select language"
+							/>
+							<div class="option">
+								<div id="english">EN</div>
+								<div id="russian">RU</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="actions">
+					<div class="buttons">
+						<button id="generate">Generate</button>
+						<button disabled id="listen">Listen</button>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<img
+					src="./assets/icons/instagram.svg"
+					onclick="eel.open_url('https\:/\/www.instagram.com/globala_a/')"
+				/>
+				<img
+					src="./assets/icons/github.svg"
+					onclick="eel.open_url('https\:/\/github.com/globalaa')"
+				/>
+				<img
+					src="./assets/icons/telegram.svg"
+					onclick="eel.open_url('https\:/\/t.me/GlobalA_A')"
+				/>
+			</footer>
+		</div>
+
+		<script type="module" src="./js/main.js"></script>
+		<script type="module" src="./js/defaultActions.js"></script>
+		<script type="module" src="./js/select.js"></script>
+	</body>
+</html>

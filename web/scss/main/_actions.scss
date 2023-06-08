@@ -1,0 +1,38 @@
+@import '../_vars';
+
+.actions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 120px;
+
+	.buttons {
+		display: inline-flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 15px;
+
+		button {
+			background-color: $dark_color;
+			border: 0;
+			padding: 10px 15px;
+			width: 180px;
+			border-radius: 5px;
+			cursor: pointer;
+			user-select: none;
+			transition: background-color 0.3s ease-in-out;
+			font-weight: 700;
+
+			&:disabled {
+				background-color: lighten($dark_color, 15%);
+				&:hover {
+					background-color: darken(lighten($dark_color, 15%), 10%);
+				}
+			}
+
+			&:hover:not(:disabled) {
+				background-color: darken($dark_color, 15%);
+			}
+		}
+	}
+}

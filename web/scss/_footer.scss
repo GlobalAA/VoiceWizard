@@ -1,0 +1,14 @@
+@import '_vars';
+
+footer {
+	background-color: $dark_color;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 20px;
+	max-height: 54px;
+
+	img {
+		cursor: pointer;
+	}
+}

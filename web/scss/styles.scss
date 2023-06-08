@@ -1,0 +1,62 @@
+@import '_vars';
+@import '_fonts';
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	min-width: 100vw;
+
+	background-color: $gray_color;
+	background-image: url('../assets/decor.png');
+	overflow: hidden;
+}
+
+* {
+	color: $default_color;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	font-size: 17px;
+	cursor: pointer;
+	font-weight: 700;
+
+	span {
+		transition: color 0.3s ease-in-out;
+		&.hover::after {
+			content: '';
+			width: 0;
+			height: 2px;
+			background-color: $sec_color;
+
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			z-index: 1;
+			transition: width 0.2s ease-in-out;
+		}
+
+		&:hover {
+			position: relative;
+			color: $sec_color;
+			&.hover::after {
+				width: 100%;
+			}
+		}
+	}
+
+	&.with-icon {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 4px;
+	}
+}
+
+input {
+	outline: none;
+}

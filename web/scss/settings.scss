@@ -1,0 +1,19 @@
+@import 'settings/_header';
+@import 'settings/options';
+@import 'settings/_button';
+@import '_footer';
+
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+main {
+	flex: 1 1 auto;
+}
