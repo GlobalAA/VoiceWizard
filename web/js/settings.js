@@ -5,13 +5,9 @@ const outputPathButton = document.getElementById('open-button');
 const dirInput = document.getElementById('dir-input');
 const language = document.getElementById('language');
 const timeout = document.getElementById('timeout');
-const listenPreview = document.getElementById('listen_preview');
-const autoListenPreview = document.getElementById('auto_listen_preview');
-const defaultLanguagePreview = document.getElementById('default_language_preview');
-const timeoutPreview = document.getElementById('timeout_preview');
 const inputs = document.querySelectorAll('[boolean]');
 window.onload = () => {
-    defaultFill(language, dirInput, inputs[0], inputs[1], timeout, listenPreview, autoListenPreview, defaultLanguagePreview, timeoutPreview);
+    defaultFill(language, dirInput, inputs[0], inputs[1], timeout);
     window.resizeTo(420, 570);
 };
 // Output Path

@@ -11,33 +11,10 @@ const language = document.getElementById('language') as HTMLInputElement
 
 const timeout = document.getElementById('timeout') as HTMLInputElement
 
-const listenPreview = document.getElementById(
-	'listen_preview'
-) as HTMLInputElement
-const autoListenPreview = document.getElementById(
-	'auto_listen_preview'
-) as HTMLInputElement
-const defaultLanguagePreview = document.getElementById(
-	'default_language_preview'
-) as HTMLInputElement
-const timeoutPreview = document.getElementById(
-	'timeout_preview'
-) as HTMLInputElement
-
 const inputs: NodeListOf<HTMLInputElement> =
 	document.querySelectorAll('[boolean]')
 window.onload = () => {
-	defaultFill(
-		language,
-		dirInput,
-		inputs[0],
-		inputs[1],
-		timeout,
-		listenPreview,
-		autoListenPreview,
-		defaultLanguagePreview,
-		timeoutPreview
-	)
+	defaultFill(language, dirInput, inputs[0], inputs[1], timeout)
 	window.resizeTo(420, 570)
 }
 

@@ -5,19 +5,11 @@ export const defaultFill = (
 	outputPath: HTMLInputElement,
 	listen: HTMLInputElement,
 	autoListen: HTMLInputElement,
-	listenTimeout: HTMLInputElement,
-	listenPreview: HTMLInputElement,
-	autoListenPreview: HTMLInputElement,
-	defaultLanguagePreview: HTMLInputElement,
-	timeoutPreview: HTMLInputElement
+	listenTimeout: HTMLInputElement
 ) => {
 	// @ts-ignore
 	eel.read_config()((data: IConfig) => {
 		const main = 'Output path:'
-		const listenDefault = 'Listen:'
-		const autoListenDefault = 'Auto listen:'
-		const languageDefault = 'Default language:'
-		const timeoutDefault = 'Listen timeout:'
 
 		defaultLanguage.value = data.defaultLanguage
 		outputPath.value = `${main} ${data.outputPath.slice(0, 15)}`
@@ -25,17 +17,6 @@ export const defaultFill = (
 		listen.value = data.listen == true ? 'T' : 'F'
 		autoListen.value = data.autoListen == true ? 'T' : 'F'
 		listenTimeout.value = String(data.listenTimeout)
-
-		listenPreview.value = `${listenDefault} ${
-			data.listen == true ? 'True' : 'False'
-		}`
-
-		autoListenPreview.value = `${autoListenDefault} ${
-			data.autoListen == true ? 'True' : 'False'
-		}`
-
-		defaultLanguagePreview.value = `${languageDefault} ${data.defaultLanguage}`
-		timeoutPreview.value = `${timeoutDefault} ${data.listenTimeout}`
 	})
 }
 
