@@ -34,5 +34,7 @@ timeout.addEventListener('input', () => {
 // Save button
 (_a = document.getElementById('save')) === null || _a === void 0 ? void 0 : _a.addEventListener('click', () => {
     // @ts-ignore
-    eel.save_config(getAllValue(language, dirInput, inputs[0], inputs[1], timeout))();
+    eel.save_config(getAllValue(language, dirInput, inputs[0], inputs[1], timeout))(() => {
+        window.location.href = './index.html';
+    });
 });

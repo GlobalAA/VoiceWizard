@@ -8,16 +8,10 @@ from uuid import uuid4
 import eel
 import vlc
 from gtts import gTTS
-from plyer import notification
+
+from utils.notify import show
 
 path = None
-
-def show(title, message):
-	notification.notify(
-		title,
-		message,
-		timeout=3
-	)
 
 @eel.expose
 def read_config():

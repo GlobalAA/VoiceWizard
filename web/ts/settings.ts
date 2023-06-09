@@ -52,5 +52,7 @@ document.getElementById('save')?.addEventListener('click', () => {
 	// @ts-ignore
 	eel.save_config(
 		getAllValue(language, dirInput, inputs[0], inputs[1], timeout)
-	)()
+	)(() => {
+		window.location.href = './index.html'
+	})
 })
