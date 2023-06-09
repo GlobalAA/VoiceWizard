@@ -1,7 +1,7 @@
 {
-	"defaultLanguage": "EN",
-	"outputPath": "/home/lucks/Desktop",
-	"listen": false,
-	"autoListen": true,
-	"listenTimeout": "1"
+  "defaultLanguage": "EN",
+  "outputPath": "/home/lucks/Desktop",
+  "listen": true,
+  "autoListen": true,
+  "listenTimeout": "1"
 }
