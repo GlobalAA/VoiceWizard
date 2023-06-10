@@ -1,0 +1,21 @@
+@import 'settings/header';
+@import '_footer';
+@import 'translate/_input';
+@import 'translate/_translate';
+@import 'translate/_buttons';
+@import 'translate/_header';
+
+html,
+body {
+	height: 100%;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+main {
+	flex: 1 1 auto;
+}

@@ -1,0 +1,18 @@
+@import '../_vars';
+
+.header {
+	background-color: $dark_color;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 10px;
+
+	img {
+		cursor: pointer;
+	}
+
+	span {
+		margin-right: 20px;
+		user-select: none;
+	}
+}

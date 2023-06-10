@@ -5,9 +5,15 @@ const outputPathButton = document.getElementById('open-button');
 const dirInput = document.getElementById('dir-input');
 const language = document.getElementById('language');
 const timeout = document.getElementById('timeout');
+// Preview list
+const languagePreview = document.getElementById("languagePreview");
+const outputPreview = document.getElementById("dir-input");
+const listenPreview = document.getElementById("listenPreview");
+const autoListenPreview = document.getElementById("autoListenPreview");
+const timeoutPreview = document.getElementById("timeoutPreview");
 const inputs = document.querySelectorAll('[boolean]');
 window.onload = () => {
-    defaultFill(language, dirInput, inputs[0], inputs[1], timeout);
+    defaultFill(language, dirInput, inputs[0], inputs[1], timeout, languagePreview, outputPreview, listenPreview, autoListenPreview, timeoutPreview);
     window.resizeTo(420, 570);
 };
 // Output Path

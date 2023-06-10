@@ -21,7 +21,12 @@
 				<div class="options">
 					<div class="config">
 						<div id="defaultLanguage">
-							<input type="text" placeholder="Default language: " readonly />
+							<input 
+								type="text"
+								placeholder="Default language: "
+								id="languagePreview" 
+								readonly 
+							/>
 							<input
 								type="text"
 								class="change-input"
@@ -39,15 +44,30 @@
 							<button class="open_button" id="open-button">Open</button>
 						</div>
 						<div id="listen">
-							<input type="text" placeholder="Listen: False" readonly />
+							<input 
+								type="text" 
+								placeholder="Listen: False" 
+								id="listenPreview" 
+								readonly 
+							/>
 							<input type="text" boolean class="change-input" maxlength="1" />
 						</div>
 						<div id="autoListen">
-							<input type="text" placeholder="Auto listen: False" readonly />
+							<input 
+								type="text" 
+								placeholder="Auto listen: False" 
+								id="autoListenPreview" 
+								readonly 
+							/>
 							<input type="text" boolean class="change-input" maxlength="1" />
 						</div>
 						<div id="listenTimeout">
-							<input type="text" placeholder="Listen timeout: 1" readonly />
+							<input 
+								type="text" 
+								placeholder="Listen timeout: 1" 
+								id="timeoutPreview" 
+								readonly 
+							/>
 							<input
 								type="number"
 								class="change-input"
@@ -75,7 +95,7 @@
 				/>
 			</footer>
 		</div>
-		<script type="module" src="./js/defaultActions.js"></script>
+		<!-- <script type="module" src="./js/defaultActions.js"></script> -->
 		<script type="module" src="./js/settings.js"></script>
 	</body>
 </html>

@@ -14,7 +14,12 @@ def get_path():
 
 @eel.expose
 def save_config(config):
-	with open('settings.json', 'w') as file:
+	with open('settings.json', 'r+') as file:
+		allowed_languages = ['RU', 'EN']
+		if not config["defaultLanguage"] in allowed_languages:
+			show("VoiceWizard (settings)", "Выбранный язык не поддерживается")
+			config['defaultLanguage'] = 'RU'
+		config["listenTimeout"] = int(config["listenTimeout"])
 		json.dump(config, file, indent=2)
 		file.flush()
-		show("Настройки", "Настройки были успешно изменены.")
+		show("VoiceWizard (settings)", "Настройки были успешно изменены.")

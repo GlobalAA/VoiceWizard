@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VoiceWizard (Translate)</title>
+		<script type="text/javascript" src="/eel.js"></script>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/translate.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<img
+					src="./assets/icons/arrow.svg"
+					onclick="window.location = './index.html'"
+				/>
+				<a onclick="window.location = './about_translate.html'"
+					><span class="hover">Справка</span></a
+				>
+			</header>
+			<main>
+				<div class="translate">
+					<input
+						type="text"
+						placeholder="Language auto detect"
+						maxlength="50"
+						id="input_text"
+					/>
+					<button class="translate_button" id="translate_button">
+						Перевести
+					</button>
+				</div>
+			</main>
+			<footer class="footer">
+				<img
+					src="./assets/icons/instagram.svg"
+					onclick="eel.open_url('https\:/\/www.instagram.com/globala_a/')"
+				/>
+				<img
+					src="./assets/icons/github.svg"
+					onclick="eel.open_url('https\:/\/github.com/globalaa')"
+				/>
+				<img
+					src="./assets/icons/telegram.svg"
+					onclick="eel.open_url('https\:/\/t.me/GlobalA_A')"
+				/>
+			</footer>
+		</div>
+		<script type="module" src="./js/defaultActions.js"></script>
+		<script type="module" src="./js/translate.js"></script>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About translate page</title>
+		<script type="text/javascript" src="/eel.js"></script>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/translate.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<img
+					src="./assets/icons/arrow.svg"
+					onclick="window.location = './translate.html'"
+				/>
+			</header>
+			<main style="margin: 15px">
+				<span style="text-align: center; width: 100%; display: block">
+					Функция перевода находится в стадии бета-тестирования <br />
+					<br />Когда вы нажимаете кнопку перевода, язык автоматически
+					выбирается, а окончательный результат вставляется в буфер обмена.
+				</span>
+			</main>
+			<footer class="footer">
+				<img
+					src="./assets/icons/instagram.svg"
+					onclick="eel.open_url('https\:/\/www.instagram.com/globala_a/')"
+				/>
+				<img
+					src="./assets/icons/github.svg"
+					onclick="eel.open_url('https\:/\/github.com/globalaa')"
+				/>
+				<img
+					src="./assets/icons/telegram.svg"
+					onclick="eel.open_url('https\:/\/t.me/GlobalA_A')"
+				/>
+			</footer>
+		</div>
+		<script type="module" src="./js/defaultActions.js"></script>
+	</body>
+</html>

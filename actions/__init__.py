@@ -1,1 +1,1 @@
-from . import main_actions, settings_actions
+from . import main_actions, settings_actions, translate_actions

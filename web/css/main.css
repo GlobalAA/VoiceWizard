@@ -5,14 +5,11 @@
   justify-content: space-between;
   padding: 15px 20px;
 }
-.header span {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
 .header .buttons {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
   gap: 30px;
 }
 
